@@ -1,0 +1,18 @@
+---
+title: "Plotly of mtcars data set"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+library(plotly)
+```
+
+Use plotly to create interactive plot of horse power versus fuel efficiency from mtcars data set
+Date created: 12/25/2017 (Yeah, that's X-Mas!)
+
+```{r cars}
+
+plot_ly(mtcars, x = ~hp, y = ~mpg, type = "scatter", mode="markers")
+
+```
